@@ -1,0 +1,9 @@
+res://default_bus_layout.tres
+res://assets/scenes/menu.tscn
+res://src/ui/worldmap.gd
+res://src/vehicle_body_3d.gd
+res://assets/objects/playernode.tscn
+res://assets/objects/characternode.tscn
+res://assets/scenes/freecam.tscn
+res://assets/scenes/pause.tscn
+res://assets/scenes/maps/environment2.tscn

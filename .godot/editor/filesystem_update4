@@ -7,3 +7,9 @@ res://assets/objects/characternode.tscn
 res://assets/scenes/freecam.tscn
 res://assets/scenes/pause.tscn
 res://assets/scenes/maps/environment2.tscn
+res://src/enemy.gd
+res://assets/scenes/options.tscn
+res://assets/scenes/credits.tscn
+res://src/ui/credits.gd
+res://assets/scenes/trophyroom.tscn
+res://assets/scenes/worldmap.tscn

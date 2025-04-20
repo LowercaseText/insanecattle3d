@@ -40,7 +40,7 @@ func unlockshit():
 func win():
 	$Node / Camera3D3 / freecamlisten / Crowd.play()
 	$detect_dead / RichTextLabel5.show()
-	$detect_dead / Menu.show()
+	$detect_dead / quitw .show()
 	freeCam()
 	unlockshit()
 	saveprogress()

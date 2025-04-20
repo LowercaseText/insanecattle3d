@@ -49,7 +49,7 @@ script = ExtResource("1")
 environment = SubResource("Environment_0dwx2")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.3291, -1.01638, -117.341)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -55.3291, -1.01638, -50.0279)
 material_override = SubResource("StandardMaterial3D_ompuh")
 use_collision = true
 size = Vector3(624.43, 1, 635.964)

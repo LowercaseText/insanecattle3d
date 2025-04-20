@@ -2,9 +2,9 @@
 
 [ext_resource type="Texture2D" uid="uid://c7jcrpe8n6228" path="res://assets/sprites/options.png" id="1"]
 [ext_resource type="Script" uid="uid://cf5chahieotvp" path="res://src/ui/options.gd" id="2"]
-[ext_resource type="FontFile" uid="uid://cvvi6o8v4r7dh" path="res://ariblk.ttf" id="3"]
+[ext_resource type="FontFile" uid="uid://cvvi6o8v4r7dh" path="res://assets/fonts/ariblk.ttf" id="3"]
 [ext_resource type="Texture2D" uid="uid://clg4mk0gj15wb" path="res://assets/sprites/handle.png" id="4"]
-[ext_resource type="Texture2D" uid="uid://ciby07ecbmnm2" path="res://yes.png" id="5"]
+[ext_resource type="Texture2D" uid="uid://ciby07ecbmnm2" path="res://assets/sprites/yes.png" id="5"]
 [ext_resource type="Texture2D" uid="uid://2h42e4tljyiq" path="res://assets/sprites/no.png" id="6"]
 [ext_resource type="AudioStream" uid="uid://b54qsdxvp8v5p" path="res://assets/sound/options_volumetest.wav" id="7"]
 [ext_resource type="AudioStream" uid="uid://dvtte0lvio6u0" path="res://assets/sound/baa.wav" id="8"]
@@ -56,17 +56,18 @@ Panel/styles/panel = SubResource("StyleBoxEmpty_kls10")
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wq7h2"]
 
 [node name="Options" type="Sprite2D"]
-position = Vector2(320, 240)
+position = Vector2(576, 324)
+scale = Vector2(1.8, 1.35)
 texture = ExtResource("1")
 
 [node name="Node" type="Node" parent="."]
 script = ExtResource("2")
 
 [node name="Name" type="LineEdit" parent="Node"]
-offset_left = 80.0
-offset_top = 192.0
-offset_right = 240.0
-offset_bottom = 218.0
+offset_left = 190.0
+offset_top = 248.0
+offset_right = 350.0
+offset_bottom = 274.0
 scale = Vector2(1.32, 1.32)
 theme_override_colors/caret_color = Color(0, 0, 0, 1)
 theme_override_colors/font_placeholder_color = Color(0.253238, 0.253238, 0.253238, 1)
@@ -89,10 +90,10 @@ drag_and_drop_selection_enabled = false
 caret_blink = true
 
 [node name="Master" type="HSlider" parent="Node"]
-offset_left = 80.0
-offset_top = 288.0
-offset_right = 288.0
-offset_bottom = 304.0
+offset_left = 190.0
+offset_top = 344.0
+offset_right = 398.0
+offset_bottom = 360.0
 focus_mode = 0
 theme_override_icons/grabber = ExtResource("4")
 theme_override_icons/grabber_highlight = ExtResource("4")
@@ -102,10 +103,10 @@ min_value = -72.0
 max_value = 0.0
 
 [node name="Music" type="HSlider" parent="Node"]
-offset_left = 80.0
-offset_top = 335.0
-offset_right = 288.0
-offset_bottom = 351.0
+offset_left = 190.0
+offset_top = 391.0
+offset_right = 398.0
+offset_bottom = 407.0
 focus_mode = 0
 theme = SubResource("Theme_w5qgn")
 theme_override_icons/grabber = ExtResource("4")
@@ -116,10 +117,10 @@ min_value = -72.0
 max_value = 0.0
 
 [node name="Fullscreen" type="CheckBox" parent="Node"]
-offset_left = 201.0
-offset_top = 237.0
-offset_right = 241.0
-offset_bottom = 277.0
+offset_left = 311.0
+offset_top = 293.0
+offset_right = 351.0
+offset_bottom = 333.0
 scale = Vector2(0.679999, 0.679999)
 focus_mode = 0
 theme_override_colors/icon_focus_color = Color(0, 0, 0, 0)
@@ -129,10 +130,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Save" type="Button" parent="Node"]
 texture_filter = 2
-offset_left = 200.0
-offset_top = 384.0
-offset_right = 280.0
-offset_bottom = 402.0
+offset_left = 187.0
+offset_top = 469.0
+offset_right = 267.0
+offset_bottom = 487.0
 scale = Vector2(1.52, 1.52)
 focus_mode = 0
 theme = SubResource("Theme_51314")
@@ -156,10 +157,10 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Save2" type="Button" parent="Node"]
 texture_filter = 2
-offset_left = 440.0
-offset_top = 352.0
-offset_right = 542.0
-offset_bottom = 388.0
+offset_left = 306.0
+offset_top = 466.0
+offset_right = 408.0
+offset_bottom = 502.0
 scale = Vector2(1.16, 1.16)
 focus_mode = 0
 theme = SubResource("Theme_51314")
@@ -208,10 +209,10 @@ volume_db = -10.0
 mix_target = 2
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Node"]
-offset_left = 80.0
-offset_top = 264.0
-offset_right = 264.0
-offset_bottom = 282.0
+offset_left = 190.0
+offset_top = 320.0
+offset_right = 374.0
+offset_bottom = 338.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3")
 theme_override_font_sizes/normal_font_size = 12
@@ -220,10 +221,10 @@ fit_content = true
 scroll_active = false
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="Node"]
-offset_left = 80.0
-offset_top = 240.0
-offset_right = 200.0
-offset_bottom = 258.0
+offset_left = 190.0
+offset_top = 296.0
+offset_right = 310.0
+offset_bottom = 314.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3")
 theme_override_font_sizes/normal_font_size = 12
@@ -232,10 +233,10 @@ fit_content = true
 scroll_active = false
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="Node"]
-offset_left = 80.0
-offset_top = 312.0
-offset_right = 264.0
-offset_bottom = 330.0
+offset_left = 190.0
+offset_top = 368.0
+offset_right = 374.0
+offset_bottom = 386.0
 theme_override_colors/default_color = Color(0, 0, 0, 1)
 theme_override_fonts/normal_font = ExtResource("3")
 theme_override_font_sizes/normal_font_size = 12
